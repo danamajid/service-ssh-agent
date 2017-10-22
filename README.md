@@ -9,7 +9,7 @@ This is achieved by exposing a proxy socket (`/.ssh-agent/proxy-socket`) via soc
 ### 1. Start the ssh-agent container 
 
 ```bash
-docker run -d --name=ssh-agent docksal/ssh-agent
+docker run -d --name=ssh-agent danamajid/ssh-agent
 ```
 
 ### 2. Add your ssh keys
@@ -46,5 +46,5 @@ Docker Compose
 ### Deleting all keys from the ssh-agent
 
 ```bash
-docker run --rm --volumes-from=ssh-agent -it docksal/ssh-agent ssh-add -D
+docker run --rm --volumes-from=ssh-agent -it danamajid/ssh-agent ssh-add -D
 ```
