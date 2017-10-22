@@ -1,6 +1,4 @@
-# SSH Agent Docker image for Docksal
-
-This image(s) is part of the [Docksal](http://docksal.io) image library.
+# SSH Agent Docker image
 
 The exposed ssh-agent socket will be accessible to all users (not only root) in any container.  
 This is achieved by exposing a proxy socket (`/.ssh-agent/proxy-socket`) via socat.
